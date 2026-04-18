@@ -129,12 +129,12 @@ button {
 }
 
 .resume-page article {
-  background: oklch(from var(--color-accent) 96% 6% h);
-  border: 1px solid oklch(from var(--color-accent) 80% 10% h);
+  background: color-mix(in oklch, canvas 90%, var(--color-accent) 10%);
+  border: 1px solid color-mix(in oklch, canvastext 18%, canvas 82%);
   border-left: 4px solid var(--color-accent);
   border-radius: 10px;
   padding: 1em 1.2em;
-  box-shadow: 0 8px 18px oklch(0% 0 0 / 0.06);
+  box-shadow: 0 8px 18px color-mix(in oklch, canvastext 10%, canvas 90%);
 }
 
 .resume-page article + article {
@@ -156,7 +156,7 @@ button {
 }
 
 .resume-page time {
-  color: oklch(40% 0 0);
+  color: color-mix(in oklch, canvastext 70%, canvas 30%);
   font-variant-numeric: tabular-nums;
 }
 
