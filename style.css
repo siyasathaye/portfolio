@@ -123,6 +123,39 @@ button {
   display: block;
 }
 
+#profile-stats {
+  margin-block: 1em 2em;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4em 1em;
+  padding: 1em;
+  border: 1px solid color-mix(in oklch, canvastext 20%, canvas 80%);
+  border-radius: 12px;
+  background: color-mix(in oklch, canvas 94%, var(--color-accent) 6%);
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: 700;
+  color: color-mix(in oklch, canvastext 75%, var(--color-accent) 25%);
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  #profile-stats dl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Resume styling */
 .resume-page section {
   margin-block: 1.5em;

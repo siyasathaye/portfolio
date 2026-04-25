@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Spatiotemporal Tracking & Trajectory Analysis",
+    "year": 2025,
+    "image": "images/jellyfish.png",
+    "description": "At Kennedy Lab, I work with high-frequency jellyfish tracking data from videos with 500,000+ frames per recording. I clean, validate, and structure large-scale optical-flow outputs into time-series trajectory datasets and build visualizations to support behavioral analysis."
+  },
+  {
+    "title": "FieldView: Tactical Viewer",
+    "year": 2026,
+    "image": "images/soccer.png",
+    "description": "A soccer analytics app that won 3rd place in a club competition. I helped build pipelines for spatiotemporal player tracking data and engineered features such as Expected Threat (xT), Pitch Control, and Pass Completion Probability, while prototyping interactive exploration in Streamlit."
+  },
+  {
+    "title": "Understanding the Causes of U.S. Power Outages",
+    "year": 2025,
+    "image": "images/poweroutage.png",
+    "description": "For my DSC 80 final project, I built reproducible data pipelines across climate, infrastructure, and outage datasets, performed feature engineering, and trained a classifier to predict outages longer than 24 hours, improving F1 score from 0.43 to 0.66."
+  },
+  {
+    "title": "Language Modeling & Text Mining",
+    "year": 2025,
+    "image": "images/language.png",
+    "description": "Built unigram and n-gram language models, applied text cleaning and normalization, and used TF-IDF and cosine similarity for document representation and comparison."
+  },
+  {
+    "title": "Multimedia Processing & Classification App",
+    "year": 2024,
+    "image": "images/image.png",
+    "description": "Developed a Python-based image and audio processing application with modular pipelines, feature extraction, and KNN-based classification."
+  },
+  {
+    "title": "Analyzing Patterns in IMDb Films",
+    "year": 2024,
+    "image": "images/film.png",
+    "description": "Analyzed entertainment metadata to identify trends across film duration, genre, and release year using exploratory data analysis, regression, and hypothesis testing."
+  },
+  {
+    "title": "Distracted Drivers Machine Learning Project",
+    "year": 2023,
+    "image": "images/drivers.png",
+    "description": "Built KNN, MLP, and CNN models on 25,000+ labeled images, focusing on preprocessing, feature extraction, and model evaluation for real-world performance."
+  },
+  {
+    "title": "Lab Portfolio Site (HTML/CSS/JS)",
+    "year": 2026,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Designed and iteratively improved a personal portfolio website across multiple labs, adding reusable components and JavaScript-driven rendering."
+  },
+  {
+    "title": "Data Cleaning Automation Script",
+    "year": 2024,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder project: automated repetitive data-cleaning steps and documented assumptions for reproducible preprocessing."
+  },
+  {
+    "title": "Interactive Dashboard Prototype",
+    "year": 2023,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder project: explored dashboard layout ideas for filtering and comparing key metrics across categories."
+  },
+  {
+    "title": "Model Evaluation Playground",
+    "year": 2022,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder project: compared baseline and tuned models using consistent train/validation/test splits and summary plots."
+  },
+  {
+    "title": "Course Assignment Archive",
+    "year": 2025,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Placeholder project: central index for selected course assignments with links, notes, and reflection takeaways."
+  }
+]
