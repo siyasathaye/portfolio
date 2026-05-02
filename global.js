@@ -103,12 +103,16 @@ export function renderProjects(projects, containerElement, headingLevel = "h2") 
     const image = project.image || "https://dsc106.com/labs/lab02/images/empty.svg";
     const title = project.title || "Untitled Project";
     const description = project.description || "Description coming soon.";
+    const year = project.year ?? "Year unavailable";
     const imageURL = image.startsWith("http") ? image : `${BASE_PATH}${image.replace(/^\/+/, "")}`;
 
     article.innerHTML = `
       <${validHeading}>${title}</${validHeading}>
       <img src="${imageURL}" alt="${title}">
-      <p>${description}</p>
+      <div class="project-copy">
+        <p>${description}</p>
+        <p class="project-year">${year}</p>
+      </div>
     `;
 
     containerElement.appendChild(article);

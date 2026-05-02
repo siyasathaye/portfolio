@@ -123,6 +123,97 @@ button {
   display: block;
 }
 
+.project-copy {
+  display: grid;
+  gap: 0.2em;
+}
+
+.project-copy p {
+  margin: 0;
+}
+
+.project-year {
+  color: color-mix(in oklch, canvastext 50%, canvas 50%);
+  font-family: Baskerville, Georgia, serif;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.projects-chart-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-block: 1.5rem;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  flex: 0 0 min(20em, 40vw);
+  overflow: visible;
+}
+
+#projects-pie-plot path {
+  cursor: pointer;
+  transition: opacity 300ms, fill 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid color-mix(in oklch, canvastext 20%, canvas 80%);
+  border-radius: 12px;
+  background: color-mix(in oklch, canvas 94%, var(--color-accent) 6%);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 0.65rem;
+  cursor: pointer;
+}
+
+.legend-item em {
+  color: color-mix(in oklch, canvastext 60%, canvas 40%);
+  font-style: normal;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: var(--color);
+  flex: none;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+#projects-pie-plot path.selected {
+  fill: var(--color);
+}
+
+.legend-item.selected {
+  background: color-mix(in oklch, var(--color) 14%, canvas 86%);
+}
+
+.searchBar {
+  width: 100%;
+  margin-block: 0 1rem;
+}
+
 #profile-stats {
   margin-block: 1em 2em;
 }
@@ -153,6 +244,15 @@ button {
 @media (max-width: 700px) {
   #profile-stats dl {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-chart-layout {
+    flex-direction: column;
+  }
+
+  #projects-pie-plot {
+    width: min(100%, 20em);
+    flex-basis: auto;
   }
 }
 
